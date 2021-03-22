@@ -1,3 +1,6 @@
+$orange-title: #c89440;
+$normal-p: white;
+
 *,
 *::before,
 *::after {
@@ -37,7 +40,7 @@ button.navbar-toggler {
 }
 
 h1 {
-	color: white;
+	color: $normal-p;
 	font-weight: 100;
 	text-align: center;
 	margin: 25px 0
@@ -59,10 +62,10 @@ div#container{
 	padding: 30px 30px;
 	min-height: 460px;
 		p {
-			color: white;
+			color: $normal-p;
 		}
 		p.titles{
-			color: #c89440;
+			color: $orange-title;
 		}
 }
 
@@ -72,7 +75,7 @@ div#container{
 		color: black;
 	}
 	p.titles{
-		color: #c89440;
+		color: $orange-title;
 	}
 }
 
@@ -84,9 +87,9 @@ span#play{
 	left: 50%;
 	transform: translateX(-50%);
 	margin: 50% 0;
-	color: white;
+	color: $normal-p;
 	font-size: 80px;
-	border: 1px solid white;
+	border: 1px solid $normal-p;
 	border-radius: 50%;
 	cursor: pointer;
 } 
