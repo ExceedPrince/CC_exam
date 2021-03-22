@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background-color: #22b573;
+}
+
+a {
+  text-decoration: none;
+	font-weight: bold;
+	color: #ebdb50
+}
+
+
+button.navbar-toggler {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 20px;
+	border-radius: 50px;
+	border: none;
+	background-color: black;
+}
+
+.navbar-dark .navbar-toggler-icon {
+	transform: scale(1.5);
+	filter: brightness(0) invert(1);
+}
+
+h1 {
+	color: white;
+	font-weight: 100;
+	text-align: center;
+	margin: 25px 0
+}
+
+div#container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 100px;
+	justify-content: center;
+	.contents {
+		width: 300px;
+	}
+}
+		
+
+.contents .innerContent{
+	background-color: #1c1717;
+	padding: 30px 30px;
+	min-height: 460px;
+		p {
+			color: white;
+		}
+		p.titles{
+			color: #c89440;
+		}
+}
+
+#block2.contents .innerContent{
+	background-color: #f2f2f2;
+	p {
+		color: black;
+	}
+	p.titles{
+		color: #c89440;
+	}
+}
+
+span#play{
+	width: 125px;
+	display: block;
+	text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 50% 0;
+	color: white;
+	font-size: 80px;
+	border: 1px solid white;
+	border-radius: 50%;
+	cursor: pointer;
+} 
+
+@media screen and (max-width: 699px) {
+  h1{
+		text-align: left;
+	}
+}
